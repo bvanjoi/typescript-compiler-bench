@@ -1,0 +1,7 @@
+{
+  "name": "typescript-compiler-benchmark",
+  "private": true,
+  "dependencies": {
+    "typescript": "5.8.2"
+  }
+}
