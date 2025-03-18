@@ -2,7 +2,7 @@
   "name": "typescript-compiler-benchmark",
   "private": true,
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node",
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node --external:@rxliuli/tsgo --external:typescript",
     "start": "node dist/index.js"
   },
   "dependencies": {

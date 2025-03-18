@@ -1,3 +1,5 @@
+import path from 'node:path';
+
 abstract class Compiler {
   abstract name(): string
   abstract cliPath(): string
@@ -9,10 +11,11 @@ export class BolttsCompiler implements Compiler {
     return 'boltts'
   }
   cliPath(): string {
-    return ''
+    const p = path.resolve(__dirname, '../../../bolt-ts/target/release/bolt_ts_compiler');
+    return p;
   }
   compileCmd(tsconfigPath: string): string {
-    return ''
+    return `${this.cliPath()} ${tsconfigPath}`;
   }
 }
 

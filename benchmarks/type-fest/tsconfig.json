@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"incremental": false,
+		"noEmit": true,
 		"noUnusedLocals": false,
 		"target": "ES2021",
 		"lib": ["ES2021"],
