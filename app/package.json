@@ -1,7 +1,19 @@
 {
   "name": "typescript-compiler-benchmark",
   "private": true,
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --platform=node",
+    "start": "node dist/index.js"
+  },
   "dependencies": {
-    "typescript": "5.8.2"
+    "typescript": "5.8.2",
+    "execa": "9.3.0",
+    "@rxliuli/tsgo": "2025.3.18",
+    "fs-extra": "11.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.1",
+    "@types/node": "22.9.0",
+    "@types/fs-extra": "11.0.1"
   }
 }

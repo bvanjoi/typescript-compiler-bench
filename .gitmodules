@@ -1,9 +1,0 @@
-[submodule "typescript-go"]
-	path = submodules/typescript-go
-	url = https://github.com/microsoft/typescript-go
-	shallow = true
-
-[submodule "bolt-ts"]
-	path = submodules/bolt-ts
-	url = https://github.com/bvanjoi/bolt-ts
-	shallow = true
