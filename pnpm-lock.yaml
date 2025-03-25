@@ -11,8 +11,8 @@ importers:
   app:
     dependencies:
       '@rxliuli/tsgo':
-        specifier: 2025.3.18
-        version: 2025.3.18
+        specifier: 2025.3.25
+        version: 2025.3.25
       execa:
         specifier: 9.3.0
         version: 9.3.0
@@ -224,9 +224,10 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@rxliuli/tsgo@2025.3.18':
-    resolution: {integrity: sha512-Lq8fuOhsFPmNIzgmvZEP+E0adlVaF11gdRU9z+EEMkVpmh73C5D1NXoNKjDQ/BysHKd2h3unE0BDVdEmJkM7ag==}
+  '@rxliuli/tsgo@2025.3.25':
+    resolution: {integrity: sha512-g90QmN+J27ov+6KZB5TGFfXgfe1u/FXkZJh3cP9Q67LmpqFkImLVri/O2YFOgzcuYLuuK0or2NtIYZJhl+d1TQ==}
     engines: {node: '>=12'}
+    cpu: [x64, ia32, arm, arm64]
     os: [darwin, linux, win32, freebsd]
     hasBin: true
 
@@ -1057,7 +1058,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@rxliuli/tsgo@2025.3.18':
+  '@rxliuli/tsgo@2025.3.25':
     dependencies:
       bin-links: 3.0.3
       node-fetch: 2.7.0

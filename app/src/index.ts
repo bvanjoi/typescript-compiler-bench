@@ -49,6 +49,8 @@ async function run(args: string[]) {
   });
   const cmd = `hyperfine -N --warmup 3 \
 ${cmds.map((cmd) => `-n ${cmd.name} "${cmd.cmd}"`).join(' ')}`;
+  
+  console.log(cmd, '\n'); 
 
   const { stdout, stderr } = await execaCommand(cmd, { cwd: benchmarkCasePath, shell: true });
   console.log(stdout);
