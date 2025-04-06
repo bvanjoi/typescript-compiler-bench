@@ -194,7 +194,6 @@ packages:
   '@rxliuli/tsgo@2025.4.6':
     resolution: {integrity: sha512-GHy+BFH01JUaaBkrkC9hr4loiIRu3GfzJpcCarzEWdgKApoM05HF0OiTm+PNxHjiVb33mhU6ypHJU72q3XszLA==}
     engines: {node: '>=12'}
-    cpu: [x64, ia32, arm, arm64]
     os: [darwin, linux, win32, freebsd]
     hasBin: true
 
