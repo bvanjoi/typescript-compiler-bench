@@ -47,7 +47,8 @@ async function run(args: string[]) {
       cmd: compiler.compileCmd(benchmarkCaseTsconfigPath),
     }
   });
-  const cmd = `hyperfine -N --warmup 3 \
+  // TODO: tsgo has some errors so use `--ignore-failure`
+  const cmd = `hyperfine -N --warmup 3 --ignore-failure \
 ${cmds.map((cmd) => `-n ${cmd.name} "${cmd.cmd}"`).join(' ')}`;
   
   console.log(cmd, '\n'); 

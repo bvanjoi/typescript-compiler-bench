@@ -19,10 +19,7 @@
 		"test": "run-p test:*"
 	},
 	"devDependencies": {
-		"expect-type": "^1.1.0",
-		"npm-run-all2": "^7.0.1",
-		"tsd": "^0.31.2",
-		"typescript": "~5.7.2"
+		"expect-type": "^1.1.0"
 	},
 	"tsd": {
 		"compilerOptions": {

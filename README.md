@@ -7,9 +7,10 @@
 brew install hyperfine # macos
 apt install hyperfine # ubuntu
 winget install hyperfine # windows
-## install typescript compiler
-git submodule update --init --force --remote
+
+## install ts compiler
 pnpm install
+## TODO: how to link(or download) bolt-ts
 
 ## build benchmark cli
 cd app && npm run build
