@@ -1,6 +1,6 @@
 // // Basic
 export * from './source/primitive';
-// export * from './source/typed-array';
+export * from './source/typed-array';
 export * from './source/basic';
 // export * from './source/observable-like';
 
@@ -46,8 +46,8 @@ export type {SetRequired} from './source/set-required';
 export type {SetNonNullable} from './source/set-non-nullable';
 export type {ValueOf} from './source/value-of';
 export type {AsyncReturnType} from './source/async-return-type';
-// export type {ConditionalExcept} from './source/conditional-except';
-// export type {ConditionalKeys} from './source/conditional-keys';
+export type {ConditionalExcept} from './source/conditional-except';
+export type {ConditionalKeys} from './source/conditional-keys';
 export type {ConditionalPick} from './source/conditional-pick';
 export type {ConditionalPickDeep, ConditionalPickDeepOptions} from './source/conditional-pick-deep';
 export type {UnionToIntersection} from './source/union-to-intersection';
@@ -131,7 +131,7 @@ export type {ArraySplice} from './source/array-splice';
 export type {ArrayTail} from './source/array-tail';
 export type {SetFieldType} from './source/set-field-type';
 // export type {Paths} from './source/paths';
-// export type {AllUnionFields} from './source/all-union-fields';
+export type {AllUnionFields} from './source/all-union-fields';
 export type {SharedUnionFields} from './source/shared-union-fields';
 export type {SharedUnionFieldsDeep} from './source/shared-union-fields-deep';
 export type {IsNull} from './source/is-null';
