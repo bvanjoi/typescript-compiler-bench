@@ -11,8 +11,11 @@ export type {DistributedPick} from './source/distributed-pick';
 export type {EmptyObject, IsEmptyObject} from './source/empty-object';
 export type {IfEmptyObject} from './source/if-empty-object';
 export type {NonEmptyObject} from './source/non-empty-object';
+export type {NonEmptyString} from './source/non-empty-string';
 export type {UnknownRecord} from './source/unknown-record';
 export type {UnknownArray} from './source/unknown-array';
+export type {UnknownSet} from './source/unknown-set';
+export type {UnknownMap} from './source/unknown-map';
 export type {Except} from './source/except';
 export type {TaggedUnion} from './source/tagged-union';
 export type {Writable} from './source/writable';
@@ -139,7 +142,7 @@ export type {IfNull} from './source/if-null';
 export type {And} from './source/and';
 export type {Or} from './source/or';
 export type {NonEmptyTuple} from './source/non-empty-tuple';
-// export type {FindGlobalInstanceType, FindGlobalType} from './source/find-global-type';
+export type {FindGlobalInstanceType, FindGlobalType} from './source/find-global-type';
 
 // Template literal types
 export type {CamelCase} from './source/camel-case';

@@ -11,8 +11,8 @@ importers:
   app:
     dependencies:
       '@rxliuli/tsgo':
-        specifier: 2025.4.09
-        version: 2025.4.9
+        specifier: 2025.4.29
+        version: 2025.4.29
       execa:
         specifier: 9.3.0
         version: 9.3.0
@@ -191,8 +191,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rxliuli/tsgo@2025.4.9':
-    resolution: {integrity: sha512-Cp/RrNtqaV2wBbWKMavt3PAL4AgAHEe1GLTpVps3ESwSstemPaC0XOh5IwH1eXhcUNg5N3CPqJ6A6Gw9tCMtGA==}
+  '@rxliuli/tsgo@2025.4.29':
+    resolution: {integrity: sha512-W1TQ1mqLKQK8WdHoGXkpJi/gnj12tZU/e1hptd5t6q2z2Dwh4JmUt1F+Aq+OxDkYkwLamqH0WApdvZhGOhtTnw==}
     engines: {node: '>=12'}
     cpu: [x64, ia32, arm, arm64]
     os: [darwin, linux, win32, freebsd]
@@ -402,7 +402,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.1':
     optional: true
 
-  '@rxliuli/tsgo@2025.4.9': {}
+  '@rxliuli/tsgo@2025.4.29': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
 
