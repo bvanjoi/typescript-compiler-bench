@@ -2,7 +2,7 @@
 export * from './source/primitive';
 export * from './source/typed-array';
 export * from './source/basic';
-// export * from './source/observable-like';
+export * from './source/observable-like';
 
 // // Utilities
 export type {KeysOfUnion} from './source/keys-of-union';
@@ -33,14 +33,14 @@ export type {PickIndexSignature} from './source/pick-index-signature';
 export type {PartialDeep, PartialDeepOptions} from './source/partial-deep';
 // export type {RequiredDeep} from './source/required-deep';
 export type {PickDeep} from './source/pick-deep';
-// export type {OmitDeep} from './source/omit-deep';
+export type {OmitDeep} from './source/omit-deep';
 export type {PartialOnUndefinedDeep, PartialOnUndefinedDeepOptions} from './source/partial-on-undefined-deep';
 export type {UndefinedOnPartialDeep} from './source/undefined-on-partial-deep';
-// export type {ReadonlyDeep} from './source/readonly-deep';
+export type {ReadonlyDeep} from './source/readonly-deep';
 export type {LiteralUnion} from './source/literal-union';
 export type {Promisable} from './source/promisable';
 export type {Arrayable} from './source/arrayable';
-// export type {Opaque, UnwrapOpaque, Tagged, GetTagMetadata, UnwrapTagged} from './source/tagged';
+export type {Opaque, UnwrapOpaque, Tagged, GetTagMetadata, UnwrapTagged} from './source/tagged';
 export type {InvariantOf} from './source/invariant-of';
 export type {SetOptional} from './source/set-optional';
 export type {SetReadonly} from './source/set-readonly';
@@ -67,7 +67,7 @@ export type {SetParameterType} from './source/set-parameter-type';
 // export type {Asyncify} from './source/asyncify';
 export type {Simplify} from './source/simplify';
 export type {SimplifyDeep} from './source/simplify-deep';
-// export type {Jsonify} from './source/jsonify';
+export type {Jsonify} from './source/jsonify';
 export type {Jsonifiable} from './source/jsonifiable';
 export type {StructuredCloneable} from './source/structured-cloneable';
 export type {Schema, SchemaOptions} from './source/schema';
