@@ -1,21 +1,22 @@
 import path from 'node:path';
+import assert from 'node:assert/strict';
 
 abstract class Compiler {
   abstract name(): string
-  abstract cliPath(): string
-  abstract compileCmd(tsconfigPath: string): string
+  abstract cliPath(): Promise<string>
+  abstract compileCmd(tsconfigPath: string): Promise<string>
 }
 
 export class BolttsCompiler implements Compiler {
   name(): string {
     return 'boltts'
   }
-  cliPath(): string {
+  cliPath(): Promise<string> {
     const p = path.resolve(__dirname, '../../../bolt-ts/target/release/bolt_ts_compiler');
-    return p;
+    return Promise.resolve(p);
   }
-  compileCmd(tsconfigPath: string): string {
-    return `${this.cliPath()} ${tsconfigPath}`;
+  async compileCmd(tsconfigPath: string): Promise<string> {
+    return this.cliPath().then((cliPath) => `${cliPath} ${tsconfigPath}`)
   }
 }
 
@@ -23,12 +24,18 @@ export class TsgoCompiler implements Compiler {
   name(): string {
     return 'tsgo'
   }
-  cliPath(): string {
-    let tsgoPath = require.resolve("@rxliuli/tsgo/bin/tsgo-darwin-arm64");
-    return tsgoPath;
+  async cliPath(): Promise<string> {
+    let tsgoPkgPath = require.resolve("@typescript/native-preview/package.json");
+    assert(tsgoPkgPath.endsWith("package.json"));
+    const libPath = path.resolve(path.dirname(tsgoPkgPath), './lib/getExePath.js');
+    return import(libPath).then((mod) => {
+      const getExePath = mod.default;
+      return getExePath()
+    })
   }
-  compileCmd(tsconfigPath: string): string {
-    return `${this.cliPath()} tsc --project ${tsconfigPath}`;
+  async compileCmd(tsconfigPath: string): Promise<string> {
+    const cliPath = await this.cliPath();
+    return `${cliPath} --project ${tsconfigPath}`
   }
 }
 
@@ -36,11 +43,12 @@ export class TscCompiler implements Compiler {
   name(): string {
     return 'tsc'
   }
-  cliPath(): string {
+  cliPath(): Promise<string> {
     let tsPath = require.resolve("typescript/bin/tsc");
-    return tsPath;
+    return Promise.resolve(tsPath);
   }
-  compileCmd(tsconfigPath: string): string {
-    return `node ${this.cliPath()} --project ${tsconfigPath}`;
+  async compileCmd(tsconfigPath: string): Promise<string> {
+    const cliPath = await this.cliPath();
+    return `node ${cliPath} --project ${tsconfigPath}`;
   }
 }

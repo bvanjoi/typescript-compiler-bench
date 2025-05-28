@@ -41,17 +41,20 @@ async function run(args: string[]) {
     new c.TscCompiler(),
   ];
 
-  const cmds = compilers.map((compiler) => {
-    return {
-      name: `${compiler.name()}_${benchmarkCase}`,
-      cmd: compiler.compileCmd(benchmarkCaseTsconfigPath),
-    }
-  });
+  const cmds = await Promise.all(compilers.map((compiler) => {
+    return compiler.compileCmd(benchmarkCaseTsconfigPath).then(cmd => {
+      return {
+        name: `${compiler.name()}_${benchmarkCase}`,
+        cmd
+      }
+    })
+  }));
+
   // TODO: tsgo has some errors so use `--ignore-failure`
   const cmd = `hyperfine -N --warmup 3 --ignore-failure \
 ${cmds.map((cmd) => `-n ${cmd.name} "${cmd.cmd}"`).join(' ')}`;
-  
-  console.log(cmd, '\n'); 
+
+  console.log(cmd, '\n');
 
   const { stdout, stderr } = await execaCommand(cmd, { cwd: benchmarkCasePath, shell: true });
   console.log(stdout);
