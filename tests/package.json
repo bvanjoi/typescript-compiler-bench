@@ -1,0 +1,13 @@
+{
+  "name": "typescript-compiler-benchmark-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "uvu src/"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "uvu": "0.5.6",
+    "@types/node": "24.0.1"
+  }
+}
