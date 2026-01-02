@@ -141,6 +141,7 @@ export type {IsNull} from './source/is-null';
 export type {IfNull} from './source/if-null';
 export type {And} from './source/and';
 export type {Or} from './source/or';
+export type {IsNullable} from './source/is-nullable.d.ts';
 export type {NonEmptyTuple} from './source/non-empty-tuple';
 export type {FindGlobalInstanceType, FindGlobalType} from './source/find-global-type';
 

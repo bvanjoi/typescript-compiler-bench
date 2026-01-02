@@ -2,14 +2,13 @@
 
 ## Benchmark
 
-> Apple M3 Max, 36G RAM, 2025-04-09.
+> Apple M3 Max, 36G RAM, 2026-01-02.
 
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `boltts_type-fest` | 690.7 ± 5.7 | 684.9 | 701.7 | 1.00 |
-| `tsgo_type-fest` | 1319.6 ± 59.7 | 1218.0 | 1388.0 | 1.91 ± 0.09 |
-| `tsc_type-fest` | 3228.6 ± 67.3 | 3123.6 | 3336.4 | 4.67 ± 0.10 |
-
+| `boltts_type-fest` | 690.9 ± 13.7 | 667.7 | 715.2 | 1.00 |
+| `tsgo_type-fest` | 1854.7 ± 24.8 | 1808.9 | 1881.4 | 2.68 ± 0.06 |
+| `tsc_type-fest` | 2361.1 ± 18.7 | 2325.3 | 2383.4 | 3.42 ± 0.07 |
 
 ## Running Benchmarks
 
