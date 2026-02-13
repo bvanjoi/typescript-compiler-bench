@@ -132,6 +132,7 @@ export type {ArrayValues} from './source/array-values';
 export type {ArraySlice} from './source/array-slice';
 export type {ArraySplice} from './source/array-splice';
 export type {ArrayTail} from './source/array-tail';
+export type {ArrayElement} from './source/array-element.d.ts';
 export type {SetFieldType} from './source/set-field-type';
 export type {Paths} from './source/paths';
 export type {AllUnionFields} from './source/all-union-fields';
@@ -144,7 +145,8 @@ export type {Or} from './source/or';
 export type {IsNullable} from './source/is-nullable.d.ts';
 export type {NonEmptyTuple} from './source/non-empty-tuple';
 export type {FindGlobalInstanceType, FindGlobalType} from './source/find-global-type';
-
+export type {If} from './source/if.d.ts';
+export type {IsUnion} from './source/is-union.d.ts';
 // Template literal types
 export type {CamelCase} from './source/camel-case';
 export type {CamelCasedProperties} from './source/camel-cased-properties';
@@ -171,7 +173,8 @@ export type {StringRepeat} from './source/string-repeat';
 export type {Includes} from './source/includes';
 // export type {Get} from './source/get';
 export type {LastArrayElement} from './source/last-array-element';
-
+export type {ConditionalSimplify} from './source/conditional-simplify.d.ts';
+export type {ConditionalSimplifyDeep} from './source/conditional-simplify-deep.d.ts';
 // Miscellaneous
 export type {GlobalThis} from './source/global-this';
 export type {PackageJson} from './source/package-json';

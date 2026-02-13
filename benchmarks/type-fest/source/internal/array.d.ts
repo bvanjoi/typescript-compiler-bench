@@ -1,5 +1,8 @@
-import type {IfNever} from '../if-never';
-import type {UnknownArray} from '../unknown-array';
+import type {If} from '../if.d.ts';
+import type {IsNever} from '../is-never.d.ts';
+import type {OptionalKeysOf} from '../optional-keys-of.d.ts';
+import type {UnknownArray} from '../unknown-array.d.ts';
+import type {IsExactOptionalPropertyTypesEnabled, IfNotAnyOrNever} from './type.d.ts';
 
 /**
 Infer the length of the given array `<T>`.
@@ -91,7 +94,7 @@ T extends readonly [...infer U] ?
 /**
 Returns whether the given array `T` is readonly.
 */
-export type IsArrayReadonly<T extends UnknownArray> = IfNever<T, false, T extends unknown[] ? false : true>;
+export type IsArrayReadonly<T extends UnknownArray> = If<IsNever<T>, false, T extends unknown[] ? false : true>;
 
 /**
 An if-else-like type that resolves depending on whether the given array is readonly.
