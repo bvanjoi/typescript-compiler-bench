@@ -6,3 +6,7 @@ export type * from './object';
 export type * from './string';
 export type * from './tuple';
 export type * from './type';
+export type * from './enforce-optional.d.ts';
+
+export {};
+
