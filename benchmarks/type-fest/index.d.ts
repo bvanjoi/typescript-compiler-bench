@@ -1,10 +1,11 @@
-// // Basic
-export * from './source/primitive';
-export * from './source/typed-array';
-export * from './source/basic';
-export * from './source/observable-like';
+// Basic
+export type * from './source/primitive.d.ts';
+export type * from './source/typed-array.d.ts';
+export type * from './source/basic.d.ts';
+export type * from './source/json-value.d.ts';
+export type * from './source/characters.d.ts';
 
-// // Utilities
+// Utilities
 export type {KeysOfUnion} from './source/keys-of-union';
 export type {DistributedOmit} from './source/distributed-omit';
 export type {DistributedPick} from './source/distributed-pick';
@@ -104,7 +105,8 @@ export type {ReadonlyKeysOf} from './source/readonly-keys-of';
 export type {HasReadonlyKeys} from './source/has-readonly-keys';
 export type {WritableKeysOf} from './source/writable-keys-of';
 export type {HasWritableKeys} from './source/has-writable-keys';
-export type {Spread} from './source/spread';
+export type {Spread} from './source/spread.d.ts';
+export type {SplitOnRestElement} from './source/split-on-rest-element.d.ts';
 export type {IsInteger} from './source/is-integer';
 export type {IsFloat} from './source/is-float';
 export type {TupleToObject} from './source/tuple-to-object';
@@ -142,11 +144,15 @@ export type {IsNull} from './source/is-null';
 export type {IfNull} from './source/if-null';
 export type {And} from './source/and';
 export type {Or} from './source/or';
-export type {IsNullable} from './source/is-nullable.d.ts';
 export type {NonEmptyTuple} from './source/non-empty-tuple';
 export type {FindGlobalInstanceType, FindGlobalType} from './source/find-global-type';
 export type {If} from './source/if.d.ts';
 export type {IsUnion} from './source/is-union.d.ts';
+// export type {IsLowercase} from './source/is-lowercase.d.ts';
+// export type {IsUppercase} from './source/is-uppercase.d.ts';
+export type {IsOptional} from './source/is-optional.d.ts';
+export type {IsNullable} from './source/is-nullable.d.ts';
+export type {TupleOf} from './source/tuple-of.d.ts';
 // Template literal types
 export type {CamelCase} from './source/camel-case';
 export type {CamelCasedProperties} from './source/camel-cased-properties';

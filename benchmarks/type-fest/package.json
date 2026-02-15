@@ -16,7 +16,7 @@
 		"tagged-tag": "^1.0.0"
 	},
 	"devDependencies": {
-		"expect-type": "^1.2.2",
+		"expect-type": "^1.3.0",
 		"tsd": "^0.33.0"
 	}
 }
