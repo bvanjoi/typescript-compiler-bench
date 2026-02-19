@@ -1,5 +1,5 @@
 import {expectType} from '../tsd';
-import type {PascalCasedProperties} from '../index';
+import type {PascalCasedProperties} from '../index.d.ts';
 
 declare const foo: PascalCasedProperties<{helloWorld: {fooBar: string}}>;
 expectType<{HelloWorld: {fooBar: string}}>(foo);
@@ -20,3 +20,9 @@ const result: PascalCasedProperties<User> = {
 	UserName: 'Tom',
 };
 expectType<PascalCasedProperties<User>>(result);
+
+declare const baz: PascalCasedProperties<{fooBAR: number; BARFoo: string}, {preserveConsecutiveUppercase: true}>;
+expectType<{FooBAR: number; BARFoo: string}>(baz);
+
+declare const biz: PascalCasedProperties<{fooBAR: number; BARFoo: string}>;
+expectType<{FooBar: number; BarFoo: string}>(biz);
