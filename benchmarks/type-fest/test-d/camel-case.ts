@@ -1,5 +1,5 @@
 import {expectType, expectAssignable} from '../tsd';
-import type {CamelCase} from '../index';
+import type {CamelCase} from '../index.d.ts';
 
 // CamelCase
 const camelFromPascal: CamelCase<'FooBar'> = 'fooBar';
@@ -67,15 +67,23 @@ expectAssignable<CamelCasedProperties<RawOptions>>({
 	otherField: false,
 });
 
-expectType<CamelCase<'fooBAR'>>('fooBAR');
-expectType<CamelCase<'fooBAR', {preserveConsecutiveUppercase: false}>>('fooBar');
+expectType<CamelCase<'fooBAR'>>('fooBar');
+expectType<CamelCase<'fooBAR', {preserveConsecutiveUppercase: true}>>('fooBAR');
 
-expectType<CamelCase<'fooBARBiz'>>('fooBARBiz');
-expectType<CamelCase<'fooBARBiz', {preserveConsecutiveUppercase: false}>>('fooBarBiz');
+expectType<CamelCase<'fooBARBiz'>>('fooBarBiz');
+expectType<CamelCase<'fooBARBiz', {preserveConsecutiveUppercase: true}>>('fooBARBiz');
 
-expectType<CamelCase<'foo BAR-Biz_BUZZ'>>('fooBARBizBUZZ');
+expectType<CamelCase<'foo BAR-Biz_BUZZ', {preserveConsecutiveUppercase: true}>>('fooBARBizBUZZ');
 expectType<CamelCase<'foo BAR-Biz_BUZZ', {preserveConsecutiveUppercase: false}>>('fooBarBizBuzz');
-expectType<CamelCase<'foo\tBAR-Biz_BUZZ', {preserveConsecutiveUppercase: false}>>('fooBarBizBuzz');
+expectType<CamelCase<'foo\tBAR-Biz_BUZZ'>>('fooBarBizBuzz');
 
+expectType<CamelCase<string, {preserveConsecutiveUppercase: true}>>('string' as string);
 expectType<CamelCase<string>>('string' as string);
-expectType<CamelCase<string, {preserveConsecutiveUppercase: false}>>('string' as string);
+
+// Test splitOnNumbers option
+expectType<'a1bText'>('' as CamelCase<'a1b_text', {splitOnNumbers: false}>);
+expectType<'a1BText'>('' as CamelCase<'a1b_text', {splitOnNumbers: true}>);
+expectType<'a1BText'>('' as CamelCase<'a1b_text'>);
+
+expectType<'p2pNetwork'>('' as CamelCase<'p2pNetwork', {splitOnNumbers: false}>);
+expectType<'p2PNetwork'>('' as CamelCase<'p2pNetwork', {splitOnNumbers: true}>);
