@@ -118,22 +118,3 @@ type _AllExtend<TArray extends UnknownArray, Type, Options extends Required<AllE
 >, false, false>;
 
 export {};
-
-
-type _AllExtend2<TArray, Type> =  If<IsAny<Type>, true,
-	TArray extends [infer First, ...infer Rest]
-		? First extends Type
-			? _AllExtend2<Rest, Type>
-			: false
-		: true
->;
-
-type CollapseRestElement2<TArray> =  TArray extends [(infer First)?]
-				? 
-					[
-						First,
-					]
-				: never;
-
-export type AllExtend2<TArray extends UnknownArray, Type> =
-	CollapseRestElement2<TArray>;

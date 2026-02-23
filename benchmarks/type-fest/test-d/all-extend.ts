@@ -1,10 +1,6 @@
 import {expectType} from '../tsd';
-import type {AllExtend, AllExtend2} from '../source/all-extend.d.ts';
+import type {AllExtend} from '../source/all-extend.d.ts';
 import type {UnknownArray} from '../source/unknown-array.d.ts';
-
-type D = [(42 | undefined)?] extends [(infer _)?] ? boolean: string;
-const d0: D = false;
-const d1: D = true;
 
 expectType<AllExtend<[], number>>(true);
 expectType<AllExtend<[1, 2, 3], number>>(true);
