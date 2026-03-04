@@ -6,9 +6,9 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@typescript/native-preview": "7.0.0-dev.20260303.1",
+    "@typescript/native-preview": "7.0.0-dev.20260304.1",
     "execa": "9.6.1",
-    "fs-extra": "11.3.3",
+    "fs-extra": "11.3.4",
     "typescript": "5.9.3"
   },
   "devDependencies": {

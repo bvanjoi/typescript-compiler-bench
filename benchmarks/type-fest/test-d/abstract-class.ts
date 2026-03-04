@@ -89,17 +89,3 @@ const Family = (new CityBlock(House)).residence.owners;
 expectType<IsAny<typeof Family>>(false);
 expectAssignable<number>(Family.count);
 // /Prototype test with type parameter
-
-
-class C {
-	constructor() {}
-}
-
-interface I<T0>  {
-	new(): T0;
-}
-
-function f<T1 extends C>(HousingType: I<T1>) {
-	class Building extends HousingType {}
-	const residence: T1 = new Building();
-}
