@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {IsArrayReadonly} from '../../source/internal/index.d.ts';
 
 // Non-readonly arrays

@@ -1,4 +1,4 @@
-import {expectNotAssignable, expectType} from '../tsd';
+import {expectNotAssignable, expectType} from 'tsd';
 import type {SetFieldType} from '../index.d.ts';
 
 declare const variation1: SetFieldType<{a: number}, 'a', string>;

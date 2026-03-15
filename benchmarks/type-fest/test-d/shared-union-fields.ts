@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {SharedUnionFields} from '../index.d.ts';
 import type {NonRecursiveType} from '../source/internal/index.d.ts';
 

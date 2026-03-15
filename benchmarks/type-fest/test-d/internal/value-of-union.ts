@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {ValueOfUnion} from '../../source/internal/index.d.ts';
 
 // Works with objects

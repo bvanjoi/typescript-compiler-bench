@@ -1,4 +1,4 @@
-import {expectNotType, expectType} from '../tsd';
+import {expectNotType, expectType} from 'tsd';
 import type {RequiredDeep, Simplify} from '../index.d.ts';
 import type {BuiltIns} from '../source/internal/type.d.ts';
 

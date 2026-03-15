@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {LiteralToPrimitive} from '../index.d.ts';
 
 // Simple usage

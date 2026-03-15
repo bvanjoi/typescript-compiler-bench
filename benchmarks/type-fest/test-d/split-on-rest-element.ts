@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {SplitOnRestElement, TupleOf, UnknownArray} from '../index.d.ts';
 
 // Fixed tuples (No rest element)

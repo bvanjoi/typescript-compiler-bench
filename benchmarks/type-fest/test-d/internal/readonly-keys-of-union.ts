@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {ReadonlyKeysOfUnion} from '../../source/internal/index.d.ts';
 
 declare const test1: ReadonlyKeysOfUnion<{readonly a: 1; b: 2}>;

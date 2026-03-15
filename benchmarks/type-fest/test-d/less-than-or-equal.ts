@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {LessThanOrEqual} from '../index.d.ts';
 import type {NegativeInfinity, PositiveInfinity} from '../source/numeric.d.ts';
 

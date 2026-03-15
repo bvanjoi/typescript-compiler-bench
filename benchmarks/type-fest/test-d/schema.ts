@@ -1,4 +1,4 @@
-import {expectNotAssignable, expectType} from '../tsd';
+import {expectNotAssignable, expectType} from 'tsd';
 import type {Schema} from '../index.d.ts';
 
 const foo = {

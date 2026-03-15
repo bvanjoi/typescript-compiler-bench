@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {IsEqual, TupleOf} from '../index.d.ts';
 
 expectType<false>({} as IsEqual<number, string>);

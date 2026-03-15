@@ -1,4 +1,4 @@
-import {expectAssignable, expectType} from '../tsd';
+import {expectAssignable, expectType} from 'tsd';
 import type {UnknownRecord} from '../index.d.ts';
 
 declare let foo: UnknownRecord;

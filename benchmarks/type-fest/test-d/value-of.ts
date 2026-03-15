@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable, expectType} from '../tsd';
+import {expectAssignable, expectNotAssignable, expectType} from 'tsd';
 import type {ValueOf} from '../index.d.ts';
 
 const value: ValueOf<{a: 1; b: 2; c: 3}> = 3;

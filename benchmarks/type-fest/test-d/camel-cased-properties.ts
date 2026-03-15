@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {CamelCasedProperties} from '../index.d.ts';
 
 declare const foo: CamelCasedProperties<{A: number; B: {C: string}}>;

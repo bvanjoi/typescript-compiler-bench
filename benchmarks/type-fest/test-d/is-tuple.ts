@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {IsTuple} from '../index.d.ts';
 
 // Tuples

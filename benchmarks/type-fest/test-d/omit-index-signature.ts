@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {OmitIndexSignature} from '../index.d.ts';
 
 type ExampleInterface = {

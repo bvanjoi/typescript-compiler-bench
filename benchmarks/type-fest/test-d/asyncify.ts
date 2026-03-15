@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {Asyncify} from '../index.d.ts';
 
 declare function getFooSync(name: string): RegExp;

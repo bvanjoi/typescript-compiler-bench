@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {TupleOf} from '../source/tuple-of.d.ts';
 
 expectType<TupleOf<3, null>>({} as [null, null, null]);

@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {IsNumeric} from '../../source/internal/index.d.ts';
 
 expectType<IsNumeric<''>>(false);

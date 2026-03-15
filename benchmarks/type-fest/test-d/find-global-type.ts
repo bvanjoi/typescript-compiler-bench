@@ -1,5 +1,5 @@
 /* eslint-disable no-var */
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {FindGlobalInstanceType, FindGlobalType} from '../index.d.ts';
 
 declare class NonGlobalES6Class {}

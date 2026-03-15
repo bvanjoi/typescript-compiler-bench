@@ -1,4 +1,4 @@
-import {expectNotAssignable, expectType} from '../tsd';
+import {expectNotAssignable, expectType} from 'tsd';
 import type {SetNonNullable} from '../index.d.ts';
 
 // Update one possibly undefined key and one possibly null key to non-nullable.

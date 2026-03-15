@@ -1,4 +1,4 @@
-import {expectNotAssignable, expectType} from '../tsd';
+import {expectNotAssignable, expectType} from 'tsd';
 import type {SetOptional, Simplify} from '../index.d.ts';
 
 // Update one required and one optional to optional.

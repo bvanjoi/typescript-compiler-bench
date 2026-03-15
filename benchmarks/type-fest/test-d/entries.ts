@@ -1,4 +1,4 @@
-import {expectAssignable} from '../tsd';
+import {expectAssignable} from 'tsd';
 import type {Entries} from '../index.d.ts';
 import type {Entry} from '../source/entry.d.ts';
 

@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {TupleToObject} from '../source/tuple-to-object.d.ts';
 
 // Tuples

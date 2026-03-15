@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {GlobalThis} from '../index.d.ts';
 
 type ExtraProperties = GlobalThis & {

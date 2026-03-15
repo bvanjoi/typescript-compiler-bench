@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {IsUnknown} from '../index.d.ts';
 
 declare const _unknown: unknown;

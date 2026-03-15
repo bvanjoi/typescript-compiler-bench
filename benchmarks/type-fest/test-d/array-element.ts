@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ArrayElement} from '../index.d.ts';
 
 // Basic array

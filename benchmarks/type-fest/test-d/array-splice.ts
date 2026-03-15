@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ArraySplice} from '../index.d.ts';
 
 // Test fixed array

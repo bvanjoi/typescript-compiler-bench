@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {IsWritableKeyOf} from '../source/is-writable-key-of.d.ts';
 
 declare const never: never;

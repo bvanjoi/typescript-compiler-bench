@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {CollapseLiterals} from '../../source/internal/object.d.ts';
 
 declare const sym1: unique symbol;

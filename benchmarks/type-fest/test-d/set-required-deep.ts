@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {SetRequiredDeep} from '../index.d.ts';
 
 // Set nested key to required

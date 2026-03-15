@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {PascalCase} from '../index.d.ts';
 
 const pascalFromCamel: PascalCase<'fooBar'> = 'FooBar';

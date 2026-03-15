@@ -49,6 +49,6 @@ export class TscCompiler implements Compiler {
   }
   async compileCmd(tsconfigPath: string): Promise<string> {
     const cliPath = await this.cliPath();
-    return `node ${cliPath} --project ${tsconfigPath}`;
+    return `node --max-old-space-size=6144 ${cliPath} --project ${tsconfigPath}`;
   }
 }

@@ -1,4 +1,4 @@
-import {expectType, expectAssignable, expectNotType} from '../tsd';
+import {expectType, expectAssignable, expectNotType} from 'tsd';
 import type {PartialDeep, Simplify} from '../index.d.ts';
 
 class ClassA {

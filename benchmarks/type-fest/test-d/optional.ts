@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {Optional} from '../index.d.ts';
 
 // Basic

@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ObjectMerge} from '../source/object-merge.d.ts';
 
 declare const sym: unique symbol;

@@ -1,4 +1,4 @@
-import {expectAssignable, expectType} from '../tsd';
+import {expectAssignable, expectType} from 'tsd';
 import type {PartialOnUndefinedDeep} from '../index.d.ts';
 
 type TestingType = {

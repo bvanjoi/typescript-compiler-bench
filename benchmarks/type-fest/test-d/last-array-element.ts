@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {LastArrayElement} from '../index.d.ts';
 
 declare function lastOf<V extends readonly unknown[]>(array: V): LastArrayElement<V>;

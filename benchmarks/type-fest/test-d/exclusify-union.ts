@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ExclusifyUnion} from '../source/exclusify-union.d.ts';
 import type {MapsSetsOrArrays, NonRecursiveType} from '../source/internal/type.d.ts';
 

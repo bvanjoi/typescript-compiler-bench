@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {IsNever} from '../index.d.ts';
 
 declare const _never: never;

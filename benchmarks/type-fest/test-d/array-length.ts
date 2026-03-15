@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ArrayLength, Primitive} from '../index.d.ts';
 
 // Non-tuples

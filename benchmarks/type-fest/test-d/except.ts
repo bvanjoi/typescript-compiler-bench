@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {Except} from '../index.d.ts';
 
 declare const except: Except<{a: number; b: string}, 'b'>;

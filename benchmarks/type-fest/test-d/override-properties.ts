@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import {expectTypeOf} from 'expect-type';
 import type {OverrideProperties} from '../source/override-properties.d.ts';
 

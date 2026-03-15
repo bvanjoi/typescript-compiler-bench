@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable} from '../tsd';
+import {expectAssignable, expectNotAssignable} from 'tsd';
 import type {UnknownMap} from '../index.d.ts';
 
 declare const foo: ReadonlyMap<string, number>;

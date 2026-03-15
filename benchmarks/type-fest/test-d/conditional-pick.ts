@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ConditionalPick, Primitive} from '../index.d.ts';
 
 class Awesome {

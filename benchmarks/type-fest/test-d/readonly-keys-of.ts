@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ReadonlyKeysOf, UnknownRecord} from '../index.d.ts';
 
 type TestType1 = {

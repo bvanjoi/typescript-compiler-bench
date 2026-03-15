@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable} from '../tsd';
+import {expectAssignable, expectNotAssignable} from 'tsd';
 import type {StructuredCloneable} from '../index.d.ts';
 
 /*

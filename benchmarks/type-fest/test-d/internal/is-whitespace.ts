@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {IsWhitespace} from '../../source/internal/index.d.ts';
 
 expectType<IsWhitespace<''>>(false);

@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ExcludeRestElement, TupleOf, UnknownArray} from '../index.d.ts';
 
 // Basic static tuples (No rest element)
