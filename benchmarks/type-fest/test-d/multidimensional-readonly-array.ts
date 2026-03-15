@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {MultidimensionalReadonlyArray} from '../index.d.ts';
 
 function createArray<T extends number>(dimensions: T): MultidimensionalReadonlyArray<string, T> {

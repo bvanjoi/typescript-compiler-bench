@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {RemovePrefix} from '../source/remove-prefix.d.ts';
 
 expectType<'change'>({} as RemovePrefix<'on-change', 'on-'>);

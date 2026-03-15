@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable, expectType} from '../tsd';
+import {expectAssignable, expectNotAssignable, expectType} from 'tsd';
 import type {Class, Constructor, IsAny} from '../index.d.ts';
 
 class Foo {

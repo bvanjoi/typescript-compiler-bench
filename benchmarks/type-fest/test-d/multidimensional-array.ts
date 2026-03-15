@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {MultidimensionalArray} from '../index.d.ts';
 
 function createArray<T extends number>(dimensions: T): MultidimensionalArray<unknown, T> {

@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {TupleMax} from '../../source/internal/index.d.ts';
 import type {PositiveInfinity} from '../../source/numeric.d.ts';
 

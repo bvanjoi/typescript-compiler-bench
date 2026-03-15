@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable, expectType} from '../tsd';
+import {expectAssignable, expectNotAssignable, expectType} from 'tsd';
 import type {Stringified} from '../index.d.ts';
 
 declare const stringified: Stringified<{a: number; b: string}>;

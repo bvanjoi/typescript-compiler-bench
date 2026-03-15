@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {KeyAsString} from '../source/key-as-string.d.ts';
 
 declare const foo: KeyAsString<{

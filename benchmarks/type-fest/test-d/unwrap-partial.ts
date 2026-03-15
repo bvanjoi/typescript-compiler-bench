@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {EmptyObject, UnwrapPartial} from '../index.d.ts';
 
 type TestType = {

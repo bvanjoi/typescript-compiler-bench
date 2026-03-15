@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {SharedUnionFieldsDeep} from '../index.d.ts';
 
 type TestingType = {

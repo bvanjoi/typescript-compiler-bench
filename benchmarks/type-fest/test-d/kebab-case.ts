@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {KebabCase} from '../index.d.ts';
 
 const kebabFromCamel: KebabCase<'fooBar'> = 'foo-bar';

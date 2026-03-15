@@ -1,4 +1,4 @@
-import {expectType, expectAssignable} from '../tsd';
+import {expectType, expectAssignable} from 'tsd';
 import type {Opaque, tag} from '../source/tagged.d.ts';
 import type {ReadonlyDeep, _ReadonlyObjectDeep} from '../source/readonly-deep.d.ts';
 import type {JsonValue} from '../source/json-value.d.ts';

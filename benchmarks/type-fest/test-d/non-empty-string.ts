@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {NonEmptyString} from '../index.d.ts';
 
 expectType<never>({} as NonEmptyString<''>);

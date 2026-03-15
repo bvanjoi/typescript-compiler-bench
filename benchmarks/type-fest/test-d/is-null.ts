@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {IsNull} from '../source/is-null.d.ts';
 
 // https://www.typescriptlang.org/docs/handbook/type-compatibility.html

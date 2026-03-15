@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {HomomorphicPick} from '../../source/internal/index.d.ts';
 
 // Picks specified keys

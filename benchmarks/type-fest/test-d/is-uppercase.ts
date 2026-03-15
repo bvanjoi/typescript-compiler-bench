@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {IsUppercase} from '../index.d.ts';
 
 // Literals

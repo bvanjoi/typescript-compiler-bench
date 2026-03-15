@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable} from '../tsd';
+import {expectAssignable, expectNotAssignable} from 'tsd';
 import type {InvariantOf} from '../index.d.ts';
 
 type FooBar = InvariantOf<{

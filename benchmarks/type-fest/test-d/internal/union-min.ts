@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {UnionMin} from '../../source/internal/numeric.d.ts';
 import type {NegativeInfinity, PositiveInfinity} from '../../index.d.ts';
 

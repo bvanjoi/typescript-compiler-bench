@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ExtractRestElement, TupleOf} from '../index.d.ts';
 
 // Leading rest element

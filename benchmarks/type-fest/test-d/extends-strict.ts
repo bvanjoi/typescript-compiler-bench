@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {Tagged} from '../source/tagged.d.ts';
 import type {ExtendsStrict} from '../source/extends-strict.d.ts';
 

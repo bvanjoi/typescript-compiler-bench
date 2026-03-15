@@ -1,4 +1,4 @@
-import {expectType, expectAssignable} from '../tsd';
+import {expectType, expectAssignable} from 'tsd';
 import type {CamelCase} from '../index.d.ts';
 
 // CamelCase

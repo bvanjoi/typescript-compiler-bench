@@ -1,4 +1,4 @@
-import {expectNotAssignable, expectType} from '../tsd';
+import {expectNotAssignable, expectType} from 'tsd';
 import type {ConditionalSimplify} from '../index.d.ts';
 
 type Position = {top: number; left: number};

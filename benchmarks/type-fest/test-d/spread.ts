@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {Spread} from '../index.d.ts';
 
 type Foo = {

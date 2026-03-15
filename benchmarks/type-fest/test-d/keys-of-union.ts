@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {KeysOfUnion, UnknownRecord} from '../index.d.ts';
 
 // When passing types that are not unions, it behaves exactly as the `keyof` operator.

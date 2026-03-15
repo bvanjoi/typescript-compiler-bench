@@ -1,4 +1,4 @@
-import {expectAssignable, expectType} from '../tsd';
+import {expectAssignable, expectType} from 'tsd';
 import type {IterableElement} from '../index.d.ts';
 
 declare const iterableElement: IterableElement<ReturnType<typeof secretGenerator>>;

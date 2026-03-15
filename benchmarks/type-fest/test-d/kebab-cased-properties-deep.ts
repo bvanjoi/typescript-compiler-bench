@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {KebabCasedPropertiesDeep} from '../index.d.ts';
 
 type FooBar = {helloWorld: {p2p: Array<{addressLine1: string}>}};

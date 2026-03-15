@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotType, expectType} from '../tsd';
+import {expectAssignable, expectNotType, expectType} from 'tsd';
 import type {TupleToUnion} from '../index.d.ts';
 
 const options = ['a', 'b', 'c'] as const;

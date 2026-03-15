@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable} from '../tsd';
+import {expectAssignable, expectNotAssignable} from 'tsd';
 import type {UnknownSet} from '../index.d.ts';
 
 declare const foo: ReadonlySet<string>;

@@ -1,4 +1,4 @@
-import {expectType} from '../../tsd';
+import {expectType} from 'tsd';
 import type {CollapseRestElement} from '../../source/internal/array.d.ts';
 
 // Simple arrays

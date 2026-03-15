@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {IsUndefined} from '../source/is-undefined.d.ts';
 
 expectType<IsUndefined<undefined>>(true);

@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable, expectType} from '../tsd';
+import {expectAssignable, expectNotAssignable, expectType} from 'tsd';
 import type {RequireOneOrNone, Simplify} from '../index.d.ts';
 
 type OneAtMost = RequireOneOrNone<Record<'foo' | 'bar' | 'baz', true>>;

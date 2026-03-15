@@ -1,4 +1,4 @@
-import {expectNever, expectType} from '../tsd';
+import {expectNever, expectType} from 'tsd';
 import type {NonEmptyObject, RequireAtLeastOne} from '../index.d.ts';
 
 type TestType1 = {

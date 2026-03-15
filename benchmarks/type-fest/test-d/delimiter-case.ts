@@ -1,4 +1,4 @@
-import {expectType, expectAssignable} from '../tsd';
+import {expectType, expectAssignable} from 'tsd';
 import type {DelimiterCase} from '../source/delimiter-case.d.ts';
 
 // DelimiterCase

@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {SetNonNullableDeep} from '../source/set-non-nullable-deep.d.ts';
 
 expectType<{a: number}>({} as SetNonNullableDeep<{a: number | null}, 'a'>);

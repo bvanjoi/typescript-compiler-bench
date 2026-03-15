@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {Words} from '../source/words.d.ts';
 
 expectType<Words<''>>([]);

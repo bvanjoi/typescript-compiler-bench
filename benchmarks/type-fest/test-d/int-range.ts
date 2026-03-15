@@ -1,4 +1,4 @@
-import {expectType, expectAssignable} from '../tsd';
+import {expectType, expectAssignable} from 'tsd';
 import type {IntRange} from '../source/int-range.d.ts';
 
 declare const test: IntRange<0, 5>;

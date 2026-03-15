@@ -1,4 +1,4 @@
-import {expectType} from '../tsd';
+import {expectType} from 'tsd';
 import type {ArrayReverse} from '../source/array-reverse.d.ts';
 import type {TupleOf} from '../source/tuple-of.d.ts';
 import type {IntRange} from '../source/int-range.d.ts';

@@ -1,4 +1,4 @@
-import {expectNotAssignable, expectType} from '../tsd';
+import {expectNotAssignable, expectType} from 'tsd';
 import type {SetReadonly, Simplify} from '../index.d.ts';
 
 // Update one readonly and one non readonly to readonly.

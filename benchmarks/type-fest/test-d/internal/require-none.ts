@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable} from '../../tsd';
+import {expectAssignable, expectNotAssignable} from 'tsd';
 import type {RequireNone} from '../../source/internal/index.d.ts';
 
 type NoneAllowed = RequireNone<'foo' | 'bar'>;

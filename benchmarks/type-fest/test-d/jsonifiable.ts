@@ -1,4 +1,4 @@
-import {expectAssignable, expectNotAssignable} from '../tsd';
+import {expectAssignable, expectNotAssignable} from 'tsd';
 import type {Jsonifiable} from '../index.d.ts';
 
 expectAssignable<Jsonifiable>(1);
