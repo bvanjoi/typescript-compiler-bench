@@ -155,7 +155,9 @@ export type {IsNull} from './source/is-null.d.ts';
 export type {IfNull} from './source/if-null.d.ts';
 export type {IsUndefined} from './source/is-undefined.d.ts';
 export type {And} from './source/and.d.ts';
+export type {AndAll} from './source/and-all.d.ts';
 export type {Or} from './source/or.d.ts';
+export type {OrAll} from './source/or-all.d.ts';
 export type {Xor} from './source/xor.d.ts';
 export type {AllExtend, AllExtendOptions} from './source/all-extend.d.ts';
 export type {SomeExtend, SomeExtendOptions} from './source/some-extend.d.ts';
@@ -170,6 +172,7 @@ export type {IsNullable} from './source/is-nullable.d.ts';
 export type {TupleOf} from './source/tuple-of.d.ts';
 export type {ExclusifyUnion} from './source/exclusify-union.d.ts';
 export type {ArrayReverse} from './source/array-reverse.d.ts';
+export type {UnionMember} from './source/union-member.d.ts';
 
 // Template literal types
 export type {CamelCase, CamelCaseOptions} from './source/camel-case.d.ts';
@@ -210,5 +213,6 @@ export type {TsConfigJson} from './source/tsconfig-json.d.ts';
 export type {ExtendsStrict} from './source/extends-strict.d.ts';
 export type {ExtractStrict} from './source/extract-strict.d.ts';
 export type {ExcludeStrict} from './source/exclude-strict.d.ts';
+export type {ExcludeExactly} from './source/exclude-exactly.d.ts';
 
 export {};
