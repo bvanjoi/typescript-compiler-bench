@@ -1,5 +1,4 @@
-// import type tag from 'tagged-tag';
-export declare const tag: unique symbol;
+import type tag from 'tagged-tag';
 
 // eslint-disable-next-line type-fest/require-exported-types
 export type TagContainer<Token> = {
@@ -130,7 +129,7 @@ type WontWork = UnwrapTagged<string>;
 @category Type
 */
 export type UnwrapTagged<TaggedType extends Tag<PropertyKey, any>> =
-RemoveAllTags<TaggedType>;
+	RemoveAllTags<TaggedType>;
 
 type RemoveAllTags<T> = T extends Tag<PropertyKey, any>
 	? {
@@ -259,6 +258,6 @@ export type UnwrapOpaque<OpaqueType extends TagContainer<unknown>> =
 			? Type
 			: OpaqueType;
 
-// export {type default as tag} from 'tagged-tag';
+export {type default as tag} from 'tagged-tag';
 
 export {};
