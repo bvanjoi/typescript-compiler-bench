@@ -1,4 +1,4 @@
 packages:
-  - 'benchmarks/*'
+  - 'project-benchmarks/type-fest'
   - 'app'
   - 'tests'

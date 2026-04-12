@@ -6,8 +6,8 @@
     "test": "uvu src/"
   },
   "devDependencies": {
-    "@types/node": "25.5.0",
-    "typescript": "5.9.3",
+    "@types/node": "25.6.0",
+    "typescript": "6.0.2",
     "uvu": "0.5.6"
   }
 }
