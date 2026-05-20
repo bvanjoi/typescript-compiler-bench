@@ -9,7 +9,7 @@
 		"exactOptionalPropertyTypes": true,
 		"skipLibCheck": false,
 		"module": "commonjs",
-		"moduleResolution": "node",
+		// "moduleResolution": "node",
 		"strict": true,
 		"noImplicitReturns": true,
 		"noImplicitOverride": true,
