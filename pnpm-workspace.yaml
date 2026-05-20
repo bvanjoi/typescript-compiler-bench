@@ -1,4 +1,5 @@
 packages:
   - 'project-benchmarks/type-fest'
+  - 'helper/bundle-typescript'
   - 'app'
   - 'tests'
